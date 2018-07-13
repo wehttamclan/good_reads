@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Books</title>
+  </head>
+  <body>
+    <ul class='books'>
+      <% @books.each do |book| %>
+        <%= link_to book.title, book_path(book) %>
+      <% end %>
+    </ul>
+  </body>
+</html>
